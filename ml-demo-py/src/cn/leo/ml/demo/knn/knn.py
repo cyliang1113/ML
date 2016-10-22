@@ -29,7 +29,7 @@ def knnAlgo(inputX, dataSet, labels, k):
     distances = ((diff**2).sum(axis=1))**0.5 # 到样本的距离
     #print(distances)
     
-    sortDistIndex = distances.argsort(); # 距离排序 sortDistIndex中保存的distances中数据的索引值
+    sortDistIndex = distances.argsort(); # 距离排序 sortDistIndex中保存 distances中数据的索引值
     #print(sortDistIndex)
     
     # 取前k个值 计算每个类别出现的次数
