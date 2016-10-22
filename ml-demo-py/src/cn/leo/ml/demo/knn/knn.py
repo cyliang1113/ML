@@ -9,18 +9,17 @@ k-近邻算法:
 输入数据每个特征与样本数据每个特征 差的平方和开平方
 
 '''
-from pip._vendor.pkg_resources import null_ns_handler
-from pip._vendor.html5lib.treewalkers._base import ENTITY
 
-'''
+
+import numpy
+
+def knnAlgo(inputX, dataSet, labels, k):
+    '''
     input    输入数据
     dataSet  样本数据集合(矩阵)
     labels   样本的类别
     k
-'''
-import numpy
-
-def knnAlgo(inputX, dataSet, labels, k):
+    '''
     
     dataSetSize = dataSet.shape[0] # 样本个数
     #print('样本个数: %d' % dataSetSize)
